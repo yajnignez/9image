@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Test artifacts
+test.png
+test.webp
+test.jpg
+test_*x*/
+*_2x2/
+*_3x3/
+*_4x4/
+*_5x5/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Claude Code
+.claude/
