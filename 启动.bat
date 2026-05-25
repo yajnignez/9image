@@ -16,8 +16,13 @@ if errorlevel 1 (
 
 python -c "import tkinterdnd2" 2>nul
 if errorlevel 1 (
-    echo Installing tkinterdnd2 (drag and drop support)...
+    echo Installing tkinterdnd2...
     python -m pip install --quiet tkinterdnd2
 )
 
 python app.py
+if errorlevel 1 (
+    echo.
+    echo ERROR: app.py failed. See message above.
+    pause
+)
