@@ -78,10 +78,10 @@ class RoundedButton(tk.Canvas):
 
     def __init__(self, parent, text, subtext="", command=None,
                  bg=CARD, fg=LABEL1, accent=ACCENT,
-                 width=100, height=56, radius=10, **kw):
+                 width=100, height=56, radius=10):
         super().__init__(parent, width=width, height=height,
                          bg=parent["bg"] if hasattr(parent, "__getitem__") else BG,
-                         highlightthickness=0, bd=0, **kw)
+                         highlightthickness=0, bd=0)
         self._bg = bg
         self._fg = fg
         self._accent = accent
