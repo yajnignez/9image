@@ -89,8 +89,8 @@ class RoundedButton(tk.Canvas):
         self._subtext = subtext
         self._cmd = command
         self._r = radius
-        self._w = width
-        self._h = height
+        self._bw = width
+        self._bh = height
         self._pressed = False
 
         self._draw()
@@ -101,7 +101,7 @@ class RoundedButton(tk.Canvas):
 
     def _draw(self, pressed=False):
         self.delete("all")
-        r, w, h = self._r, self._w, self._h
+        r, w, h = self._r, self._bw, self._bh
         fill = "#E8E8ED" if pressed else self._bg
         # rounded rect via polygon
         self.create_polygon(
